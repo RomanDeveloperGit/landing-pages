@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
+		"webp": "npm install webp-converter@2.2.3 --save-dev",
 		"dev": "gulp",
 		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
