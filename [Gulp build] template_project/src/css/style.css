@@ -21,6 +21,7 @@ body {
 
 [class*="__container"] {
 	/* max-width: px; */
+	/* padding: 0 px; */
 	margin: 0 auto;
 }
 
