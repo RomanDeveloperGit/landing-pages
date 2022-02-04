@@ -9,9 +9,9 @@ body {
 }
 
 .container {
-	/* max-width: px; */
+	/* max-width: (X + 30)px; */
 	
-	/* padding: 0 px; */
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
