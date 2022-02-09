@@ -31,10 +31,63 @@ a {
 	text-decoration: none;
 }
 
-button {
-	cursor: pointer;
+input {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
 
+	color: inherit;
 	background-color: transparent;
+
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+::-moz-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+:-moz-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+:-ms-input-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+textarea {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+
+	color: inherit;
+	background-color: transparent;
+
+	resize: none;
+	outline: none;
+}
+
+button {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+
+	cursor: pointer;
+	
+	color: inherit;
+	background-color: transparent;
+
 	border: none;
 }
 
