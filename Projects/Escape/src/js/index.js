@@ -5,7 +5,7 @@ $( document ).ready( function() {
 		$( ".header-menu" ).toggleClass( "header-menu_actived" );
 	});
 
-	$( ".scroll" ).click( function() {
+	$( ".slowScroll" ).click( function() {
 		let href = $( this ).attr( "href" );
 		if ($( href ).length) $( "html, body" ).animate( { scrollTop: $( href ).offset().top }, 500 );
 	});
