@@ -1,0 +1,94 @@
+/* Reset styles */
+
+html, body {
+	line-height: 1;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+
+	border: 0;
+
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+
+	color: inherit;
+	background-color: transparent;
+
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+::-moz-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+:-moz-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+:-ms-input-placeholder {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+textarea {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+
+	color: inherit;
+	background-color: transparent;
+
+	resize: none;
+	outline: none;
+}
+
+button {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+
+	cursor: pointer;
+	
+	color: inherit;
+	background-color: transparent;
+
+	border: none;
+}
+
+/* Reset styles */
