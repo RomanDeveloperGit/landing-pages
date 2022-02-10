@@ -17,9 +17,11 @@ ul, ol, li {
 	list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: inherit;
+h1, h2, h3, h4, h5, h6, p {
 	font-size: inherit;
+	font-weight: inherit;
+
+	line-height: inherit;
 }
 
 img {
@@ -39,6 +41,8 @@ input {
 	color: inherit;
 	background-color: transparent;
 
+	line-height: inherit;
+
 	outline: none;
 }
 
@@ -46,24 +50,32 @@ input {
 	font-size: inherit;
 	font-family: inherit;
 	font-weight: inherit;
+
+	line-height: inherit;
 }
 
 ::-moz-placeholder {
 	font-size: inherit;
 	font-family: inherit;
 	font-weight: inherit;
+
+	line-height: inherit;
 }
 
 :-moz-placeholder {
 	font-size: inherit;
 	font-family: inherit;
 	font-weight: inherit;
+
+	line-height: inherit;
 }
 
 :-ms-input-placeholder {
 	font-size: inherit;
 	font-family: inherit;
 	font-weight: inherit;
+
+	line-height: inherit;
 }
 
 textarea {
@@ -73,6 +85,8 @@ textarea {
 
 	color: inherit;
 	background-color: transparent;
+
+	line-height: inherit;
 
 	resize: none;
 	outline: none;
@@ -87,6 +101,8 @@ button {
 	
 	color: inherit;
 	background-color: transparent;
+
+	line-height: inherit;
 
 	border: none;
 }
