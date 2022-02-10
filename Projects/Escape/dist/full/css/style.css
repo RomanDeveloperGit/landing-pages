@@ -87,8 +87,6 @@ body {
   align-items: center;
 }
 
-
-
 .header__menu-toggler_on {
   display: none;
   position: relative;
@@ -169,8 +167,6 @@ body {
 .header-menu__item::after {
   background-color: #ffffff;
 }
-
-
 
 /* Header styles */
 

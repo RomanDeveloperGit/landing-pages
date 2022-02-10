@@ -1,7 +1,7 @@
 $( document ).ready( function() {
 	isWebp();
 
-	$( ".header__menu-toggler_on, .header-menu__button-close" ).on( "click", function() {
+	$( ".header__menu-toggler_on, .header-menu__button-close" ).click( function() {
 		$( ".header-menu" ).toggleClass( "header-menu_actived" );
 	});
 
