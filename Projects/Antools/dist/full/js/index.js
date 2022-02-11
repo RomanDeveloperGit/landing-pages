@@ -1,9 +1,11 @@
 $( document ).ready( function() {
 	isWebp();
 
-	$( ".menu-burger" ).click( function() {
+	$( ".menu-burger, .menu__item_home" ).click( function() {
 		$( ".menu" ).toggleClass( "menu_actived" );
+		$( "body" ).toggleClass( "body_no-scroll-y" );
 	});
+
 
 	$( ".slowScroll" ).click( function() {
 		let href = $( this ).attr( "href" );

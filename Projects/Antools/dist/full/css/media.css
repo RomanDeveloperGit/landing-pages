@@ -84,20 +84,25 @@
 
   .menu {
     position: absolute;
-    top: calc( 100% + 40px);
-    /* мб побольше */
+    top: 0;
     left: 0;
     right: 0;
     z-index: 9;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-    height: calc(100vh - 98px - 40px);
+    min-height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #1e252b;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #283036;
     gap: 20px;
     -webkit-transition: .5s;
     -o-transition: .5s;

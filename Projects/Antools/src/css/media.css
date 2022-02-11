@@ -81,18 +81,20 @@
 
 	.menu {
 		position: absolute;
-		top: calc( 100% + 40px); /* мб побольше */
+		top: 0;
 		left: 0;
 		right: 0;
 		z-index: 9;
 
 		transform: translateX(-100%);
 
-		height: calc(100vh - 98px - 40px);
+		min-height: 100vh;
 
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-		background-color: #1e252b;
+		background-color: #283036;
 		gap: 20px;
 
 		transition: .5s;
