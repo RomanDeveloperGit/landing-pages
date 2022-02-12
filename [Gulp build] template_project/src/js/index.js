@@ -1,1 +1,3 @@
-isWebp();
+$( document ).ready( function() {
+	isWebp();
+});
