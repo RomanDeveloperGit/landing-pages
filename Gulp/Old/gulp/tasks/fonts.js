@@ -19,14 +19,14 @@ export const ttfToWoff = () => {
 				formats: ["woff"]
 			})
 		)
+		.pipe( app.gulp.dest( `${app.path.srcFolder}/fonts/` ) )
 		.pipe( app.gulp.dest( `${app.path.build.full.fonts}` ) )
 		.pipe( app.gulp.dest( `${app.path.build.min.fonts}` ) )
 		.pipe( app.gulp.src( `${app.path.srcFolder}/fonts/*.ttf` ) )
-		// аналогичные файлы перенести в src-исходник
 		.pipe( ttf2woff2() )
+		.pipe( app.gulp.dest( `${app.path.srcFolder}/fonts/` ) )
 		.pipe( app.gulp.dest( `${app.path.build.full.fonts}` ) )
 		.pipe( app.gulp.dest( `${app.path.build.min.fonts}` ) );
-		// аналогичные файлы перенести в src-исходник
 }
 
 export const fontsStyle = () => {
