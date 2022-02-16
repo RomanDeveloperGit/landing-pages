@@ -9,7 +9,7 @@ html, body {
 *, *::before, *::after {
 	box-sizing: inherit;
 
-	outline: none;
+	outline-color: transparent;
 	border: 0;
 
 	padding: 0;
@@ -24,7 +24,6 @@ li[class] {
 
 h1, h2, h3, h4, h5, h6, p, blockquote {
 	font: inherit;
-	color: inherit;
 }
 
 a[class] {
@@ -47,24 +46,26 @@ input {
 	color: inherit;
 
 	background-color: transparent;
-
-	outline: none;
 }
 
 ::-webkit-input-placeholder {
 	font: inherit;
+	color: inherit;
 }
 
 ::-moz-placeholder {
 	font: inherit;
+	color: inherit;
 }
 
 :-moz-placeholder {
 	font: inherit;
+	color: inherit;
 }
 
 :-ms-input-placeholder {
 	font: inherit;
+	color: inherit;
 }
 
 input::-webkit-outer-spin-button,
@@ -81,7 +82,6 @@ textarea {
 	background-color: transparent;
 
 	resize: none;
-	outline: none;
 }
 
 button {
