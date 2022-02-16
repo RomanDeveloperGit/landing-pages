@@ -1,2 +1,2 @@
 # Web repository.
-Here is my gulp builds and my web projects.
+Here is my web projects( HTML, CSS, JS ).
