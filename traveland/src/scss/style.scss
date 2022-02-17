@@ -1,0 +1,43 @@
+// Importing SCSS...
+@import "reset";
+@import "vars";
+
+@import "fonts";
+@import "plugins";
+
+
+
+// Main styles
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	// font-size: px;
+	// font-family: ;
+	// font-weight: ;
+	
+	// color: ;
+}
+
+.container {
+	// max-width: (X + 30)px;
+	
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+// Main styles
+
+
+
+// Importing SCSS...
+@import "media";

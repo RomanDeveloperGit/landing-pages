@@ -1,0 +1,31 @@
+$defaultBg: #ffffff;
+
+$titleColor: #000000;
+$descriptionColor: #999999;
+
+$defaultColor: #000000;
+$activedColor: #999999;
+
+%coverBg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+%absolute {
+    position: absolute;
+
+    content: "";
+}
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
