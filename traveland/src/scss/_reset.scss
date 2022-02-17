@@ -10,7 +10,7 @@ body {
 *::after {
     box-sizing: inherit;
 
-    outline-color: transparent;
+    outline: none;
     border: 0;
 
     padding: 0;
@@ -34,7 +34,7 @@ blockquote {
     font: inherit;
 }
 
-a[class] {
+a {
     display: inline-block;
 
     color: inherit;

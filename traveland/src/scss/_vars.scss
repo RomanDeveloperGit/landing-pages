@@ -1,31 +1,35 @@
-$defaultBg: #ffffff;
-
 $titleColor: #000000;
-$descriptionColor: #999999;
-
-$defaultColor: #000000;
-$activedColor: #999999;
+$descriptionColor: rgba(0, 0, 0, 0.6);
 
 %coverBg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 %absolute {
-    position: absolute;
+	position: absolute;
 
-    content: "";
-}
-
-%flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	content: "";
 }
 
 %flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+%verticalCenter {
+	display: flex;
+	align-items: center;
+}
+
+%menuLinkAfter {
+	@extend %absolute;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+
+	height: 1px;
+
+	transition: .5s;
 }
