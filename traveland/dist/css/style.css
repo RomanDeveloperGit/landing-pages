@@ -98,6 +98,7 @@ button {
   background-repeat: no-repeat;
 }
 
+.hero::before,
 .menu-burger::before,
 .menu-burger::after,
 .header,
@@ -1269,8 +1270,16 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-position: 90% bottom;
+  background-position: 90% center;
   padding-top: 40px;
+}
+
+.hero::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero__container {
@@ -1706,18 +1715,6 @@ body {
 .footer-form__button {
   color: #ffffff;
   padding: 10px 32px;
-}
-
-@media (max-width: 1200px) {
-  .hero::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-  }
 }
 
 @media (max-width: 1149px) {

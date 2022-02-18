@@ -228,9 +228,20 @@ body {
 	align-items: center;
 
 	@extend %coverBg;
-	background-position: 90% bottom;
+	background-position: 90% center;
 
 	padding-top: 40px;
+
+	&::before {
+		@extend %absolute;
+		
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		background-color: rgba( 0, 0, 0, 0.6);
+	}
 
 	&__container {
 		position: relative;

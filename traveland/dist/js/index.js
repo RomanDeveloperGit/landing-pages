@@ -10115,13 +10115,13 @@ document.querySelector(".menu-burger").onclick = function () {
 };
 
 document.querySelectorAll(".menu__link").forEach(function (element) {
-  element.onclick = function () {
+  element.addEventListener("click", function () {
     if (getComputedStyle(document.querySelector(".menu-burger")).display != "none") setStatusMenu();
-  };
+  });
 });
 document.querySelectorAll(".slowScroll").forEach(function (element) {
-  element.onclick = function (e) {
-    e.preventDefault();
+  element.addEventListener("click", function (event) {
+    event.preventDefault();
     var href = this.getAttribute("href").substring(1);
     var scrollTarget = document.getElementById(href);
     var elementPosition = scrollTarget.getBoundingClientRect().top;
@@ -10129,5 +10129,5 @@ document.querySelectorAll(".slowScroll").forEach(function (element) {
       top: elementPosition,
       behavior: 'smooth'
     });
-  };
+  });
 });
