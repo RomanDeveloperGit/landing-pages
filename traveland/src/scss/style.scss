@@ -24,6 +24,10 @@ body {
 	color: #ffffff;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .container {
 	max-width: 1170px;
 	
@@ -87,6 +91,7 @@ body {
 // Main styles
 
 
+
 // Header styles
 
 .header {
@@ -94,6 +99,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 9;
 
 	padding: 35px 0;
 
@@ -111,11 +117,82 @@ body {
 	}
 }
 
+.menu-burger {
+	position: relative;
+	z-index: 99;
+
+	width: 30px;
+	height: 20px;
+
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	display: none;
+
+	&__row {
+		width: 100%;
+		height: 2px;
+
+		background-color: #ffffff;
+
+		opacity: 1;
+
+		transition: 0.75s;
+	}
+
+	&::before,
+	&::after {
+		@extend %absolute;
+
+		left: 0;
+		right: 0;
+		height: 0;
+
+		height: 2px;
+
+		background-color: #ffffff;
+
+		transition: .5s;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&_actived {
+		.menu-burger__row {
+			opacity: 0;
+
+			transition: 0s;
+		}
+
+		&::before {
+			top: 50%;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			top: 50%;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
 .menu {
 	display: flex;
 	align-items: center;
 
-	column-gap: 50px;
+	gap: 5% 50px;
+
+	&__item_mobile-button {
+		display: none;
+	}
 
 	&__link {
 		position: relative;
@@ -151,10 +228,13 @@ body {
 	align-items: center;
 
 	@extend %coverBg;
+	background-position: 90% bottom;
 
 	padding-top: 40px;
 
 	&__container {
+		position: relative;
+
 		width: 100%;
 	}
 
@@ -211,8 +291,7 @@ body {
 
 		flex-wrap: wrap;
 
-		gap: 20px;
-		// по вертикали потом подумать
+		column-gap: 20px;
 	}
 }
 
@@ -231,6 +310,9 @@ body {
 		height: 330px;
 
 		object-fit: cover;
+		object-position: center bottom;
+
+		border-radius: 10px;
 	}
 
 	&__text-box {
@@ -456,14 +538,14 @@ body {
 	display: flex;
 	align-items: center;
 
-	translate: .5s;
+	transition: 0.5s;
 
 	&:hover {
 		opacity: 0.9;
 	}
 	
 	&__img {
-		width: 265px;
+		max-width: 265px;
 		height: 200px;
 
 		object-fit: cover;
@@ -499,15 +581,21 @@ body {
 		grid-column: span 1;
 
 		.blog-item__img {
-			width: 555px;
+			max-width: 100%;
 			height: 395px;
 
+			object-position: center bottom;
+			
 			margin-right: 30px;
 			margin-bottom: 35px;
 		}
 
 		.blog-item__description {
 			max-width: 470px;
+
+			&_mini {
+				display: none;
+			}
 		}
 
 		.blog-item__author {
@@ -531,6 +619,8 @@ body {
 	&__container {
 		@extend %flexBetween;
 		align-items: flex-start;
+
+		flex-wrap: wrap;
 
 		color: #000000;
 	}

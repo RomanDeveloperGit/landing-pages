@@ -7,36 +7,40 @@
 
 		<title>Traveland</title>
 
-		<link rel="stylesheet" href="css/style.min.css?_v=20220217225723">
+		<link rel="stylesheet" href="css/style.min.css?_v=20220218165125">
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" id="header">
 			<div class="container header__container">
-				<a class="logo" href="#">Traveland</a>
+				<a class="logo header__logo slowScroll" href="#header">Traveland</a>
 				<nav class="header-nav">
+					<div class="menu-burger">
+						<span class="menu-burger__row"></span>
+					</div>
 					<ul class="menu">
-						<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Location</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">About</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#header">Home</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#popular-locations">Location</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#blog">Blog</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#header">About</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#footer">Contact</a></li>
+						<li class="menu__item menu__item_mobile-button"><a class="menu__link slowScroll" href="#header">Booking now</a></li>
 					</ul>
 				</nav>
-				<a class="button header__button" href="#">Booking now</a>
+				<a class="button header__button slowScroll" href="#header">Booking now</a>
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero" style="background-image: url(../images/hero-bg.jpg);">
+			<section class="hero" id="hero" style="background-image: url(images/hero-bg.jpg);">
 				<div class="container hero__container">
 					<h1 class="hero__title">Railtrips To Here, There And Everywhere!</h1>
 					<p class="hero__description">We all wish to start our year the best way possible and also according to a common belief if you have a great start to your.</p>
-					<a class="button hero__button" href="">Explore more</a>
+					<a class="button hero__button slowScroll" href="#special-offers">Explore more</a>
 				</div>
 			</section>
-			<section class="popular-locations">
+			<section class="popular-locations" id="popular-locations">
 				<div class="container">
 					<h2 class="title main__title popular-locations__title">Popular Location</h2>
-					<p class="description main__description popular-locations__description">For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the</p>
+					<p class="description main__description popular-locations__description">For every one of us, travel came first. We`ve spent years living as nomads, pioneers, and voyagers— from island hopping in the</p>
 					<div class="popular-locations__item-box">
 						<div class="location-item">
 							<picture><source srcset="images/location-1.webp" type="image/webp"><img class="location-item__img" src="images/location-1.png" alt="Istanbul, Turkey"></picture>
@@ -62,7 +66,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="special-offers">
+			<section class="special-offers" id="special-offers">
 				<div class="container">
 					<h2 class="title main__title special-offers__title">Special Offers</h2>
 					<p class="description main__description special-offers__description">With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates.</p>
@@ -181,7 +185,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="blog">
+			<section class="blog" id="blog">
 				<div class="container">
 					<h2 class="title main__title blog__title">From Blog & News</h2>
 					<p class="description main__description blog__description">Welcome to Community Conversations, a new interview series featuring Intrepid travellers, creatives and activists in our community.</p>
@@ -189,74 +193,82 @@
 						<div class="blog-item blog-item_main">
 							<picture><source srcset="images/blog-1.webp" type="image/webp"><img class="blog-item__img" src="images/blog-1.png" alt="Banff National Park"></picture>
 							<div class="blog-item__text">
-								<a class="blog-item__info" href="#">
+								<a class="blog-item__info slowScroll" href="#blog">
 									<h4 class="title blog-item__title">Banff National Park</h4>
-									<p class="description blog-item__description">Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery.<br>Turquoise-colored lakes, snow-capped peaks, and glaciers are all easily accessible</p>
+									<p class="description blog-item__description">
+										<span class="blog-item__description_full">
+											Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery.<br>
+											Turquoise-colored lakes, snow-capped peaks, and glaciers are all easily accessible
+										</span>
+										<span class="blog-item__description_mini">
+											Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery...
+										</span>
+									</p>
 								</a>
-								<a class="blog-item__author" href="#">@thomasalva_adison</a>
+								<a class="blog-item__author slowScroll" href="#blog">@thomasalva_adison</a>
 							</div>
 						</div>
 						<div class="blog-item">
 							<picture><source srcset="images/blog-2.webp" type="image/webp"><img class="blog-item__img" src="images/blog-2.png" alt="The Hiroshima Peace"></picture>
 							<div class="blog-item__text">
-								<a class="blog-item__info" href="#">
+								<a class="blog-item__info slowScroll" href="#blog">
 									<h4 class="title blog-item__title">The Hiroshima Peace!</h4>
 									<p class="description blog-item__description">It was formally opened to the public in August that year.</p>
 								</a>
-								<a class="blog-item__author" href="#">@shova_bd88</a>
+								<a class="blog-item__author slowScroll" href="#blog">@shova_bd88</a>
 							</div>
 						</div>
 						<div class="blog-item">
 							<picture><source srcset="images/blog-3.webp" type="image/webp"><img class="blog-item__img" src="images/blog-3.png" alt="The faithful prayers"></picture>
 							<div class="blog-item__text">
-								<a class="blog-item__info" href="#">
+								<a class="blog-item__info slowScroll" href="#blog">
 									<h4 class="title blog-item__title">The faithful prayers!</h4>
 									<p class="description blog-item__description">A major pilgrimage center for Hindus, the holy city.</p>
 								</a>
-								<a class="blog-item__author" href="#">@adem/smith</a>
+								<a class="blog-item__author slowScroll" href="#blog">@adem/smith</a>
 							</div>
 						</div>
 						<div class="blog-item">
 							<picture><source srcset="images/blog-4.webp" type="image/webp"><img class="blog-item__img" src="images/blog-4.png" alt="Colourful waters"></picture>
 							<div class="blog-item__text">
-								<a class="blog-item__info" href="#">
+								<a class="blog-item__info slowScroll" href="#blog">
 									<h4 class="title blog-item__title">Colourful waters!</h4>
 									<p class="description blog-item__description">Forest-driven water and energy cycles are poorly.</p>
 								</a>
-								<a class="blog-item__author" href="#">@jhon7leew</a>
+								<a class="blog-item__author slowScroll" href="#blog">@jhon7leew</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container footer__container">
 				<div class="footer-main">
-					<a class="logo footer-main__logo" href="#">Traveland</a>
+					<a class="logo footer-main__logo slowScroll" href="#header">Traveland</a>
 					<div class="footer-main__contact-box">
 						<p class="footer-main__contact-title">Contact us</p>
-						<a class="footer-main__contact-email" href="#">@shovasatkhira88.com</a>
+						<a class="footer-main__contact-email" href="mailto:contact_travel@gmail.com">contact_travel@gmail.com</a>
 					</div>
 					<div class="footer-main__social-box">
-						<a class="footer-main__social" href="#"><img src="images/facebook.svg" alt="Facebook icon"></a>
-						<a class="footer-main__social" href="#"><img src="images/instagram.svg" alt="Instagram icon"></a>
-						<a class="footer-main__social" href="#"><img src="images/twitter.svg" alt="Twitter icon"></a>
-						<a class="footer-main__social" href="#"><img src="images/google.svg" alt="Google icon"></a>
+						<a class="footer-main__social slowScroll" href="#footer"><img src="images/facebook.svg" alt="Facebook icon"></a>
+						<a class="footer-main__social slowScroll" href="#footer"><img src="images/instagram.svg" alt="Instagram icon"></a>
+						<a class="footer-main__social slowScroll" href="#footer"><img src="images/twitter.svg" alt="Twitter icon"></a>
+						<a class="footer-main__social slowScroll" href="#footer"><img src="images/google.svg" alt="Google icon"></a>
 					</div>
 				</div>
 				<ul class="footer-menu">
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Services</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">About</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Our story</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Benefits</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Branding</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Services</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">About</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Our story</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Benefits</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Branding</a></li>
 				</ul>
 				<ul class="footer-menu">
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Legal</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Terms & Conditions</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Privecy Policy</a></li>
-					<li class="footer-menu__item"><a class="footer-menu__link" href="#">Terms of use</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Legal</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Terms & Conditions</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Privecy Policy</a></li>
+					<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Terms of use</a></li>
 				</ul>
 				<div class="footer-subscribe">
 					<h4 class="footer-subscribe__title">SUBSCRIBE NOW</h4>
@@ -268,6 +280,6 @@
 			</div>
 		</footer>
 
-		<script src="js/index.min.js?_v=20220217225723"></script>
+				<script src="js/index.min.js?_v=20220218165125"></script>
 	</body>
 </html>
