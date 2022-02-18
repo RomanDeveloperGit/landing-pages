@@ -586,13 +586,13 @@ body {
 
 	&_main {
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 
 		grid-row: span 3;
 		grid-column: span 1;
 
 		.blog-item__img {
-			max-width: 100%;
+			max-width: none;
 			height: 395px;
 
 			object-position: center bottom;
