@@ -22,6 +22,7 @@ body {
 	font-weight: 400;
 	
 	color: $titleColor;
+	background-color: $defaultBg;
 }
 
 .container {
@@ -33,6 +34,43 @@ body {
 
 .main {
 	flex-grow: 1;
+
+	&__title {
+		font-size: 36px;
+	}
+}
+
+.logo {
+	font-size: 32px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+
+	line-height: 1.21;
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+
+	line-height: 1.5;
+	letter-spacing: -0.01em;
+}
+
+.description {
+	font-size: 18px;
+	color: $descriptionColor;
+
+	line-height: 1.5;
+}
+
+.button {
+	font-weight: 500;
+	color: #ffffff;
+	
+	line-height: 1.18;
+
+	background-color: $buttonColor;
+	border-radius: 4px;
 }
 
 // Main styles
@@ -41,13 +79,641 @@ body {
 
 // Header styles
 
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	
+	background-color: #ffffff;
+	box-shadow: 0px 0px 3px 0px rgba(34, 60, 80, 0.15);
 
+	padding: 35px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		padding: 14px 16px;
+	}
+}
+
+.menu-burger {
+	position: relative;
+	z-index: 99;
+
+	width: 30px;
+	height: 20px;
+
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	display: none;
+
+	&__row {
+		width: 100%;
+		height: 2px;
+
+		background-color: $titleColor;
+
+		opacity: 1;
+
+		transition: 0.75s;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		content: "";
+
+		height: 2px;
+
+		background-color: $titleColor;
+
+		transition: .5s;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&_actived {
+		.menu-burger__row {
+			opacity: 0;
+
+			transition: 0s;
+		}
+
+		&::before {
+			top: 50%;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			top: 50%;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+
+	gap: 5% 32px;
+
+	&__item_mobile-button {
+		display: none;
+	}
+
+	&__link {
+		position: relative;
+
+		font-weight: 500;
+		line-height: 1.18;
+
+		transition: .5s;
+
+		&::after {
+			position: absolute;
+			left: 50%;
+			right: 50%;
+			bottom: -7px;
+
+			content: "";
+
+			height: 1px;
+
+			background-color: $titleColor;
+
+			transition: .5s;
+		}
+
+		&:hover::after {
+			left: 0;
+			right: 0;
+		}
+	}
+}
 
 // Header styles
 
 
 
-// font-family: "Montserrat", sans-serif;
+// Hero styles
+
+.hero {
+	padding: 200px 0 80px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__content {
+		margin-bottom: 50px;
+	}
+
+	&__title {
+		max-width: 512px;
+
+		font-size: 48px;
+
+		margin-bottom: 24px;
+	}
+
+	&__description {
+		max-width: 485px;
+
+		font-size: 18px;
+
+		margin-bottom: 32px;
+	}
+
+	&__button {
+		padding: 16px 32px;
+	}
+}
+
+// Hero styles
+
+
+
+// Hotel styles
+
+.hotel {
+	padding: 80px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__img {
+
+	}
+	
+	&__content {
+
+	}
+
+	&__title {
+		max-width: 690px;
+
+		margin-bottom: 24px;
+	}
+
+	&__description {
+		max-width: 585px;
+	}
+
+	&__description + &__description {
+		margin-top: 16px;
+	}
+
+	&__button {
+		padding: 16px 32px;
+		margin-top: 32px;
+	}
+}
+
+// Hotel styles
+
+
+
+// Benefit styles
+
+.benefit {
+	padding: 80px 0;
+}
+
+.benefit-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& + & {
+		margin-top: 32px;
+	}
+
+	&__img {
+
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__description {
+		max-width: 585px;
+	}
+}
+
+// Benefit styles
+
+
+
+// Rooms styles
+
+.rooms {
+	padding: 80px 0;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__description {
+		max-width: 585px;
+
+		text-align: center;
+
+		margin-bottom: 32px;
+	}
+
+	&__button {
+		padding: 16px 32px;
+		margin-bottom: 88px;
+	}
+
+	&__item-box {
+		width: 100%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+.rooms-item {
+	width: 384px;
+
+	transition: .5s;
+
+	&:hover {
+		transform: translateY(-10px);
+
+		.rooms-item__img {
+			transform: scale(1.1);
+		}
+	}
+
+	&__img-box {
+		width: 100%;
+		height: 490px;
+
+		overflow: hidden;
+
+		margin-bottom: 32px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+
+		transition: .5s;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		color: #000000;
+
+		line-height: 1.5;
+
+		margin-bottom: 16px;
+	}
+
+	&__description {
+		margin-bottom: 32px;
+	}
+
+	&__link-box {
+		display: flex;
+		align-items: center;
+		
+		transition: .5s;
+
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+
+	&__link-text {
+		font-size: 18px;
+		color: #424F7B;
+
+		line-height: 1.5;
+
+		margin-right: 12px;
+	}
+
+	&__link-icon {
+		margin-top: 3px;
+	}
+}
+
+// Rooms styles
+
+
+
+// Connection styles
+
+.connection {
+	padding: 80px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__sup-title {
+		font-weight: 500;
+		color: #424F7B;
+
+		line-height: 1.5;
+
+		margin-bottom: 7px;
+	}
+
+	&__title {
+		max-width: 410px;
+
+		margin-bottom: 24px;
+	}
+
+	&__description {
+		max-width: 385px;
+
+		margin-bottom: 32px;
+	}
+
+	&__button-box {
+		display: flex;
+		align-items: center;
+	}
+
+	&__button {
+		&_contact {
+			padding: 16px 32px;
+
+			margin-right: 24px;
+		}
+
+		&_explore {
+			font-weight: 500;
+			color: $buttonColor;
+
+			line-height: 1.18;
+		}
+	}
+
+	&__accordion {
+		max-width: 590px;
+		width: 50%;
+	}
+}
+
+.accordion-item {
+	cursor: pointer;
+
+	box-shadow: 0px 0px 25px 0px rgb(34 60 80 / 15%);
+	border-radius: 7px;
+
+	padding: 32px 36px;
+
+	transition: .5s;
+
+	&:not(&_actived):hover {
+		opacity: 0.75;
+	}
+
+	& + & {
+		margin-top: 25px;
+	}
+
+	&_actived {
+		.accordion-content {
+			display: block;
+		}
+
+		.accordion-trigger__icon-box {
+			background-color: #FF620A;
+		}
+
+		.accordion-trigger__icon {
+			transform: rotate(180deg);
+		}
+
+		.accordion-trigger__icon path {
+			stroke: #fff;
+		}
+	}
+}
+
+.accordion-trigger {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__text {
+		font-size: 24px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+
+		color: #424F7B;
+
+		line-height: 1.5;
+	}
+
+	&__icon-box {
+		width: 40px;
+		height: 40px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-color: #FFECE2;
+		border-radius: 50%;
+	}
+}
+
+.accordion-content {
+	display: none;
+
+	margin-top: 20px;
+}
+
+// Connection styles
+
+
+
+// Comment styles
+
+.comment {
+	padding: 80px 0;
+
+	&__title {
+		text-align: center;
+
+		margin-bottom: 60px;
+	}
+}
+
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+
+	cursor: pointer;
+
+	margin-bottom: 24px;
+
+	&__img {
+		margin-bottom: 45px;
+	}
+
+	&__blockquote {
+		max-width: 795px;
+
+		margin-bottom: 40px;
+	}
+
+	&__author {
+		font-size: 20px;
+		font-weight: 500;
+		color: #192252;
+
+		line-height: 1.5;
+	}
+}
+
+.swiper-pagination {
+	position: relative;
+	bottom: 0 !important;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-bullet {
+		width: 8px;
+		height: 8px;
+		
+		background-color: rgba(250, 176, 71, 0.35);
+
+		opacity: 1;
+
+		&-active {
+			width: 12px;
+			height: 12px;
+
+			background-color: #FAB047;
+		}
+	}
+}
+
+// Comment styles
+
+
+
+// Footer styles
+
+.footer {
+	color: #ffffff;
+	background-color: #0B265A;
+
+	padding: 120px 0;
+
+	&__container {
+		display: flex;
+		align-items: flex-start;
+	}
+}
+
+.footer-main {
+	max-width: 185px;
+
+	margin-right: auto;
+
+	&__logo {
+		margin-bottom: 12px;
+	}
+
+	&__description {
+		line-height: 1.75;
+		color: #D9DBDE;
+
+		margin-bottom: 35px;
+	}
+
+	&__social-box {
+		display: flex;
+		align-items: center;
+
+		column-gap: 24px;
+	}
+}
+
+.footer-item {
+	&:nth-child(2) {
+		margin-right: 100px;
+	}
+
+	&:nth-child(3) {
+		margin-right: 140px;
+	}
+
+	&__title {
+		font-weight: bold;
+	
+		line-height: 1.18;
+		letter-spacing: 0.01em;
+
+		margin-bottom: 24px;
+	}
+}
+
+.footer-menu {
+	&__item + &__item {
+		margin-top: 24px;
+	}
+
+	&__link {
+		color: #D9DBDE;
+
+		line-height: 1.18;
+	}
+}
+
+// Footer styles
 
 
 
