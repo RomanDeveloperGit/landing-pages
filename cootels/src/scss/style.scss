@@ -25,6 +25,10 @@ body {
 	background-color: $defaultBg;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .container {
 	max-width: 1230px;
 	
@@ -71,6 +75,12 @@ body {
 
 	background-color: $buttonColor;
 	border-radius: 4px;
+
+	transition: .5s;
+
+	&:hover {
+		box-shadow: 0px 0px 10px 1px rgba($buttonColor, 0.5);
+	}
 }
 
 // Main styles
@@ -154,17 +164,23 @@ body {
 		.menu-burger__row {
 			opacity: 0;
 
+			background-color: #ffffff;
+
 			transition: 0s;
 		}
 
 		&::before {
 			top: 50%;
 			transform: rotate(45deg);
+
+			background-color: #ffffff;
 		}
 
 		&::after {
 			top: 50%;
 			transform: rotate(-45deg);
+
+			background-color: #ffffff;
 		}
 	}
 }
@@ -247,6 +263,10 @@ body {
 	&__button {
 		padding: 16px 32px;
 	}
+
+	&__img_mobile {
+		display: none;
+	}
 }
 
 // Hero styles
@@ -258,18 +278,14 @@ body {
 .hotel {
 	padding: 80px 0;
 
+	&__img_mobile {
+		display: none;
+	}
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
-
-	&__img {
-
-	}
-	
-	&__content {
-
 	}
 
 	&__title {
@@ -311,10 +327,6 @@ body {
 		margin-top: 32px;
 	}
 
-	&__img {
-
-	}
-
 	&__title {
 		margin-bottom: 25px;
 	}
@@ -340,6 +352,8 @@ body {
 	}
 
 	&__title {
+		text-align: center;
+		
 		margin-bottom: 24px;
 	}
 
@@ -360,22 +374,20 @@ body {
 		width: 100%;
 
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: flex-start;
+
+		flex-wrap: wrap;
+
+		gap: 70px 24px;
 	}
 }
 
 .rooms-item {
 	width: 384px;
 
-	transition: .5s;
-
-	&:hover {
-		transform: translateY(-10px);
-
-		.rooms-item__img {
-			transform: scale(1.1);
-		}
+	&__img:hover {
+		transform: scale(1.1);
 	}
 
 	&__img-box {
@@ -383,6 +395,8 @@ body {
 		height: 490px;
 
 		overflow: hidden;
+
+		border-radius: 7px;
 
 		margin-bottom: 32px;
 	}
@@ -392,6 +406,7 @@ body {
 		height: 100%;
 
 		object-fit: cover;
+		object-position: center bottom;
 
 		transition: .5s;
 	}
@@ -489,12 +504,17 @@ body {
 			color: $buttonColor;
 
 			line-height: 1.18;
+
+			transition: .5s;
+
+			&:hover {
+				opacity: 0.75;
+			}
 		}
 	}
 
 	&__accordion {
-		max-width: 590px;
-		width: 50%;
+		width: 590px;
 	}
 }
 
@@ -597,6 +617,11 @@ body {
 	margin-bottom: 24px;
 
 	&__img {
+		width: 120px;
+		height: 120px;
+
+		border-radius: 50%;
+
 		margin-bottom: 45px;
 	}
 
@@ -655,6 +680,8 @@ body {
 	&__container {
 		display: flex;
 		align-items: flex-start;
+
+		flex-wrap: wrap;
 	}
 }
 
@@ -679,6 +706,14 @@ body {
 		align-items: center;
 
 		column-gap: 24px;
+	}
+
+	&__social-link {
+		transition: .5s;
+
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 }
 
@@ -710,6 +745,12 @@ body {
 		color: #D9DBDE;
 
 		line-height: 1.18;
+
+		transition: .5s;
+
+		&:hover {
+			opacity: 0.75;
+		}
 	}
 }
 

@@ -5,47 +5,49 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Document</title>
+		<title>Cootels</title>
 
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
 		<header class="header" id="header">
 			<div class="container header__container">
-				<a class="logo header__logo" href="#">Cootels</a>
+				<a class="logo header__logo slowScroll" href="#hero">Cootels</a>
 				<nav class="header-nav">
 					<div class="menu-burger">
 						<span class="menu-burger__row"></span>
 					</div>
 					<ul class="menu">
-						<li class="menu__item"><a class="menu__link" href="#">Rooms</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Reservation</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
-						<li class="menu__item menu__item_mobile-button"><a class="menu__link" href="#">Get Started</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#rooms">Rooms</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#hotel">Reservation</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#footer">Contacts</a></li>
+						<li class="menu__item menu__item_mobile-button"><a class="menu__link slowScroll" href="#hotel">Get Started</a></li>
 					</ul>
 				</nav>
-				<a class="button header__button" href="#header">Get Started</a>
+				<a class="button header__button slowScroll" href="#hotel">Get Started</a>
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero" id="hero">
 				<div class="container hero__container">
 					<div class="hero__content">
 						<h1 class="title hero__title">Nature, Warmth, and Beauty in One Space</h1>
+						<img class="hero__img hero__img_mobile" src="images/hero.png" alt="House">
 						<p class="description hero__description">One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.</p>
-						<a class="button hero__button" href="#">Reservation</a>
+						<a class="button hero__button slowScroll" href="#hotel">Reservation</a>
 					</div>
 					<img class="hero__img" src="images/hero.png" alt="House">
 				</div>
 			</section>
-			<section class="hotel">
+			<section class="hotel" id="hotel">
 				<div class="container hotel__container">
 					<img class="hotel__img" src="images/hotel.png" alt="Hotel">
 					<div class="hotel__content">
 						<h2 class="title main__title hotel__title">Cozy and Down to Earth Cootage Hotel in Norway.</h2>
+						<img class="hotel__img hotel__img_mobile" src="images/hotel.png" alt="Hotel">
 						<p class="description hotel__description">Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique and spectacular panorama of the Hallerbos Jungle.</p>
 						<p class="description hotel__description">Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and beauty with us.</p>
-						<a class="button hotel__button" href="#">Learn More</a>
+						<a class="button hotel__button slowScroll" href="#hotel">Learn More</a>
 					</div>
 				</div>
 			</section>
@@ -67,11 +69,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="rooms">
+			<section class="rooms" id="rooms">
 				<div class="container rooms__container">
 					<h2 class="title main__title rooms__title">Many Rooms to Choose</h2>
 					<p class="description rooms__description">There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience</p>
-					<a class="button rooms__button" href="#">Explore more</a>
+					<a class="button rooms__button slowScroll" href="#rooms">Explore more</a>
 					<div class="rooms__item-box">
 						<div class="rooms-item">
 							<div class="rooms-item__img-box">
@@ -79,7 +81,7 @@
 							</div>
 							<h4 class="rooms-item__title">Single Room</h4>
 							<p class="description rooms-item__description">Best for a brave lone wolf who need comfort and quiet quality time, but you still have a chance to meet others.</p>
-							<a class="rooms-item__link-box" href="#">
+							<a class="rooms-item__link-box slowScroll" href="#rooms">
 								<span class="rooms-item__link-text">Learn more</span>
 								<img class="rooms-item__link-icon" src="images/icons/arrow-right.svg" alt="Arrow right">
 							</a>
@@ -90,7 +92,7 @@
 							</div>
 							<h4 class="rooms-item__title">Double Room</h4>
 							<p class="description rooms-item__description">Best for couple, seek happiness in intimacy without worry of being disturbed. Feel the whole world just for you two</p>
-							<a class="rooms-item__link-box" href="#">
+							<a class="rooms-item__link-box slowScroll" href="#rooms">
 								<span class="rooms-item__link-text">Learn more</span>
 								<img class="rooms-item__link-icon" src="images/icons/arrow-right.svg" alt="Arrow right">
 							</a>
@@ -101,7 +103,7 @@
 							</div>
 							<h4 class="rooms-item__title">Cootage</h4>
 							<p class="description rooms-item__description">Best for family or group. One cootage can fit up to 5 people. Made stronger bond with your family or friends</p>
-							<a class="rooms-item__link-box" href="#">
+							<a class="rooms-item__link-box slowScroll" href="#rooms">
 								<span class="rooms-item__link-text">Learn more</span>
 								<img class="rooms-item__link-icon" src="images/icons/arrow-right.svg" alt="Arrow right">
 							</a>
@@ -116,8 +118,8 @@
 						<h2 class="title main__title connection__title">How to Get My Room?</h2>
 						<p class="description connection__description">You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point</p>
 						<div class="connection__button-box">
-							<a class="button connection__button connection__button_contact" href="#">Contact us</a>
-							<a class="connection__button connection__button_explore" href="#">Explore more room</a>
+							<a class="button connection__button connection__button_contact slowScroll" href="#footer">Contact us</a>
+							<a class="connection__button connection__button_explore slowScroll" href="#rooms">Explore more room</a>
 						</div>
 					</div>
 					<div class="connection__accordion">
@@ -209,39 +211,39 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container footer__container">
 				<div class="footer-main">
-					<a class="logo footer-main__logo" href="#">Cootels</a>
+					<a class="logo footer-main__logo slowScroll" href="#hero">Cootels</a>
 					<p class="footer-main__description">Your Best Private Hideway From Crowd. Back to Nature.</p>
 					<div class="footer-main__social-box">
-						<img class="footer-main__social" src="images/icons/twitter.svg" alt="Twitter">
-						<img class="footer-main__social" src="images/icons/instagram.svg" alt="Instagram">
-						<img class="footer-main__social" src="images/icons/facebook.svg" alt="Facebook">
+						<a class="footer-main__social-link slowScroll" href="#footer"><img class="footer-main__social-icon" src="images/icons/twitter.svg" alt="Twitter"></a>
+						<a class="footer-main__social-link slowScroll" href="#footer"><img class="footer-main__social-icon" src="images/icons/instagram.svg" alt="Instagram"></a>
+						<a class="footer-main__social-link slowScroll" href="#footer"><img class="footer-main__social-icon" src="images/icons/facebook.svg" alt="Facebook"></a>
 					</div>
 				</div>
 				<div class="footer-item">
 					<h5 class="footer-item__title">Rooms</h5>
 					<ul class="footer-menu">
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Single Room</a></li>
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Double Room</a></li>
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Cabin</a></li>
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Custom Room</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#rooms">Single Room</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#rooms">Double Room</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#rooms">Cabin</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#rooms">Custom Room</a></li>
 					</ul>
 				</div>
 				<div class="footer-item">
 					<h5 class="footer-item__title">Reservation</h5>
 					<ul class="footer-menu">
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">See the Steps</a></li>
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Best Time</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">See the Steps</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Best Time</a></li>
 					</ul>
 				</div>
 				<div class="footer-item">
 					<h5 class="footer-item__title">Rooms</h5>
 					<ul class="footer-menu">
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Our Number</a></li>
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Our Email</a></li>
-						<li class="footer-menu__item"><a class="footer-menu__link" href="#">Our Location</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Our Number</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Our Email</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Our Location</a></li>
 					</ul>
 				</div>
 			</div>

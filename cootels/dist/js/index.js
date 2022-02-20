@@ -42,12 +42,12 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
-var isWebp = function isWebp() {
+function checkSupportWebp() {
   function testWebP(callback) {
     var webP = new Image();
 
     webP.onload = webP.onerror = function () {
-      callback(webP.height == 2);
+      return callback(webP.height == 2);
     };
 
     webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
@@ -56,7 +56,7 @@ var isWebp = function isWebp() {
   testWebP(function (support) {
     if (support == true) document.querySelector("body").classList.add("webp");else document.querySelector("body").classList.add("no-webp");
   });
-};
+}
 
 
 (function (global, factory) {
@@ -10080,7 +10080,35 @@ var isWebp = function isWebp() {
   return Swiper;
 });
 
-isWebp();
+checkSupportWebp();
+
+function setStatusMenu() {
+  document.querySelector(".menu-burger").classList.toggle("menu-burger_actived");
+  document.querySelector(".menu").classList.toggle("menu_actived");
+  document.querySelector("body").classList.toggle("no-scroll");
+}
+
+document.querySelector(".menu-burger").onclick = function () {
+  setStatusMenu();
+};
+
+document.querySelectorAll(".menu__link").forEach(function (element) {
+  element.addEventListener("click", function () {
+    if (getComputedStyle(document.querySelector(".menu-burger")).display != "none") setStatusMenu();
+  });
+});
+document.querySelectorAll(".slowScroll").forEach(function (element) {
+  element.addEventListener("click", function (event) {
+    event.preventDefault();
+    var href = this.getAttribute("href").substring(1);
+    var scrollTarget = document.getElementById(href);
+    var elementPosition = scrollTarget.getBoundingClientRect().top - 35;
+    window.scrollBy({
+      top: elementPosition,
+      behavior: 'smooth'
+    });
+  });
+});
 document.querySelectorAll(".accordion-item").forEach(function (itemElement) {
   itemElement.addEventListener("click", function () {
     document.querySelectorAll(".accordion-item").forEach(function (_itemElement) {

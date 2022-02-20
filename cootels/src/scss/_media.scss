@@ -1,23 +1,493 @@
-@media (max-width: 1200px) {
-	
+@media (max-width: 1230px) {
+	// .hero__img {
+	.hero picture {
+		min-width: 390px;
+		width: 40%;
+	}
+
+
+
+	.hotel__title {
+		max-width: 610px;
+	}
+
+
+
+	.rooms__item-box {
+		column-gap: 100px;
+	}
+}
+
+@media (max-width: 1080px) {
+	// .hotel__img {
+	.hotel picture {
+		min-width: 215px;
+		width: 33%;
+	}
+
+
+
+	.benefit-item__description {
+		max-width: 460px;
+	}
+
+
+
+	.connection {
+		&__container {
+			flex-direction: column;
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			text-align: center;
+
+			margin-bottom: 60px;
+		}
+
+		&__description {
+			max-width: 685px;
+		}
+	}
 }
 
 @media (max-width: 992px) {
-	
+	.main__title {
+		font-size: 32px;
+	}
+
+
+
+	.hero {
+		&__title {
+			font-size: 38px;
+		}
+
+		&__description {
+			max-width: 365px;
+		}
+	}
+
+
+
+	.hotel {
+		&__title {
+			max-width: 475px;
+		}
+
+		&__description {
+			max-width: 505px;
+		}
+	}
 }
 
-@media (max-width: 768px) {
-	
+@media (max-width: 920px) {
+	.benefit-item {
+		flex-direction: column;
+
+		text-align: center;
+
+		& + & {
+			margin-top: 60px;
+		}
+		
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			margin-bottom: 30px;
+		}
+
+		&__description {
+			max-width: 80%;
+
+			text-align: center;
+		}
+	}
+
+	.benefit-item:last-child {
+		flex-direction: column-reverse;
+	}
+
+
+
+	.rooms__item-box {
+		column-gap: 50px;
+	}
+
+	.rooms-item {
+		width: 335px;
+
+		&__img-box {
+			height: 400px;
+		}
+	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 860px) {
+	.hero {
+		&__container {
+			flex-direction: column-reverse;
+		}
+		
+		&__content {
+			text-align: center;
+
+			margin-bottom: 0;
+		}
+
+		&__title {
+			max-width: 560px;
+			
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+		}
+
+		&__description {
+			max-width: 600px;
+
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		// &__img {
+		// 	display: none;
+
+		// 	&_mobile {
+		// 		display: inline-block;
+		// 	}
+		// }
+
+		picture {
+			display: none;
+		}
+
+		&__content {
+			picture {
+				display: inline-block;
+			}
+
+			.hero__img_mobile {
+				display: inline-block;
+			}
+		}
+	}
+
+
+
+	.hotel {
+		// &__img {
+		// 	display: none;
+
+		// 	&_mobile {
+		// 		display: inline-block;
+
+		// 		margin-bottom: 30px;
+		// 	}
+		// }
+
+		picture {
+			display: none;
+		}
+
+		&__content {
+			picture {
+				display: inline-block;
+			}
+
+			.hotel__img_mobile {
+				display: inline-block;
+				margin-bottom: 30px;
+			}
+		}
+
+
+
+		&__container {
+			flex-direction: column;
+
+			text-align: center;
+		}
+
+		&__title {
+			max-width: 560px;
+
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__description {
+			max-width: 545px;
+		
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+
+
+	.accordion {
+		&-item {
+			padding: 25px 30px;
+		}
+		
+		&-trigger__text {
+			font-size: 22px;
+		}
+	}
+
+
+
+	.footer-item:nth-child(2),
+	.footer-item:nth-child(3) {
+		margin-right: 70px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header {
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__button {
+			display: none;
+		}
+	}
+
+	.menu-burger {
+		display: flex;
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9;
+
+		height: 100vh;
+
+		flex-direction: column;
+		justify-content: center;
+
+		background-color: $buttonColor;
+
+		transform: translateX(-100%);
+
+		opacity: 0;
+		transition: .5s;
+
+		&_actived {
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+		&__item_mobile-button {
+			display: flex;
+		}
+
+		&__link {
+			font-size: 24px;
+			color: #ffffff;
+
+			&::after {
+				right: 50.01%;
+				background-color: #ffffff;
+			}
+		}
+	}
+
+
+
+	.benefit-item {
+		&__description {
+			max-width: 90%;
+		}
+
+		&__img {
+			width: 300px;
+		}
+	}
+
+
+
+	.connection__accordion {
+		width: 95%;
+	}
+
+
+
+	.footer {
+		padding: 70px 0;
+
+		&__container {
+			justify-content: space-between;
+		}
+
+		&-main {
+			max-width: 100%;
+			width: 100%;
+
+			margin-bottom: 60px;
+		}
+
+		&-item {
+			width: 30%;
 	
+			&:nth-child(2),
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.accordion-trigger__text {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 480px) {
+	.logo {
+		font-size: 26px;
+	}
+
+	.main__title {
+		font-size: 24px;
+	}
+
+
+
+	.header {
+		padding: 25px 0;
+	}
+
+
+
+	.hero {
+		padding-top: 160px;
+
+		&__title {
+			font-size: 31px;
+		}
+
+		// &__img {
+		picture {
+			min-width: auto;
+			width: 90%;
+
+			margin-bottom: 40px;
+		}
+	}
+
+
+
+	.benefit-item__description {
+		max-width: 100%;
+	}
+
+
+
+	.accordion-trigger__text {
+		width: 80%;
+
+		font-size: 18px;
+
+		margin-right: 15px;
+	}
+
+	.accordion-content {
+		font-size: 16px;
+	}
+
 	
+
+	.footer {
+		&__container {
+			row-gap: 40px;
+		}
+
+		&-main {
+			margin-bottom: 0;
+		}
+
+		&-item {
+			width: 55%;
+		}
+	}
 }
 
-@media (max-width: 360px) {
-	
+@media (max-width: 365px) {
+	.description {
+		font-size: 16px;
+	}
+
+
+
+	.hero {
+		&__title {
+			font-size: 27px;
+		}
+
+		// &__img {
+		picture {
+			margin-bottom: 20px;
+		}
+	}
+
+
+
+	.rooms-item {
+		width: 290px;
+
+		&__img-box {
+			height: 320px;
+		}
+
+		&__title {
+			font-size: 22px;
+		}
+	}
+
+
+
+	.accordion-trigger__text {
+		width: 70%;
+
+		font-size: 16px;
+	}
+
+	.accordion-content {
+		font-size: 14px;
+	}
+
+
+
+	.swiper-slide__author {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 350px) {
+	.connection {
+		&__button-box {
+			flex-direction: column;
+		}
+		
+		&__button {
+			& + & {
+				margin-top: 25px;
+			}
+
+			margin-right: 0;
+		}
+	}
 }
