@@ -316,7 +316,7 @@ body {
 
 .service {
   text-align: center;
-  padding: 60px 0;
+  padding: 120px 0 60px 0;
 }
 .service__container {
   display: flex;
@@ -757,6 +757,10 @@ body {
     right: 15px;
     bottom: 0;
   }
+
+  .service__item-box {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 1050px) {
   .hero__container {
@@ -825,6 +829,10 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .main__title {
+    font-size: 30px;
+  }
+
   .hero__title {
     font-size: 34px;
   }
@@ -849,8 +857,17 @@ body {
   .hero__icon-box:nth-child(5) {
     right: 5px;
   }
+
+  .service__item-box {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 @media (max-width: 480px) {
+  .main__title {
+    font-size: 26px;
+  }
+
   .hero__title {
     font-size: 28px;
     margin-bottom: 40px;

@@ -60,6 +60,12 @@
 			}
 		}
 	}
+
+
+
+	.service__item-box {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media (max-width: 1050px) {
@@ -154,6 +160,12 @@
 }
 
 @media (max-width: 576px) {
+	.main__title {
+		font-size: 30px;
+	}
+
+
+
 	.hero {
 		&__title {
 			font-size: 34px;
@@ -189,9 +201,23 @@
 			}
 		}
 	}
+
+
+
+	.service__item-box {
+		grid-template-columns: 1fr;
+
+		row-gap: 20px;
+	}
 }
 
 @media (max-width: 480px) {
+	.main__title {
+		font-size: 26px;
+	}
+
+
+
 	.hero {
 		&__title {
 			font-size: 28px;

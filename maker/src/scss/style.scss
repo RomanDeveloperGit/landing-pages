@@ -220,7 +220,6 @@ body {
 // Hero styles
 
 .hero {
-	// background: url(../images/hero-bg.png) center / cover no-repeat;
 	background-image: url(../images/hero-bg.png);
 	background-position: right center;
 	background-size: cover;
@@ -329,7 +328,7 @@ body {
 .service {
 	text-align: center;
 
-	padding: 60px 0;
+	padding: 120px 0 60px 0;
 
 	&__container {
 		display: flex;
