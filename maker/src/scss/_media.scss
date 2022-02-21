@@ -66,6 +66,12 @@
 	.service__item-box {
 		grid-template-columns: 1fr 1fr;
 	}
+
+
+
+	.benefit__item-box {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media (max-width: 1050px) {
@@ -185,11 +191,23 @@
 			}
 		}
 	}
+
+
+
+	.popup-video__iframe {
+		height: 52vw;
+	}
 }
 
 @media (max-width: 768px) {
 	.hero__title {
 		font-size: 42px;
+	}
+
+
+
+	.benefit__item-box {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -284,6 +302,13 @@
 				bottom: -35px;
 			}
 		}
+	}
+
+
+
+	.popup-video__button {
+		width: 80px;
+		height: 80px;
 	}
 }
 

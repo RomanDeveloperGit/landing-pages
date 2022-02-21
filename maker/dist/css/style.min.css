@@ -520,7 +520,6 @@ body {
 }
 .benefit__item-box {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px 30px;
 }
@@ -764,6 +763,10 @@ body {
   .service__item-box {
     grid-template-columns: 1fr 1fr;
   }
+
+  .benefit__item-box {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 1050px) {
   .hero__container {
@@ -847,10 +850,18 @@ body {
     display: block;
     margin-bottom: 40px;
   }
+
+  .popup-video__iframe {
+    height: 52vw;
+  }
 }
 @media (max-width: 768px) {
   .hero__title {
     font-size: 42px;
+  }
+
+  .benefit__item-box {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 576px) {
@@ -916,6 +927,11 @@ body {
   .hero__icon-box:nth-child(5) {
     right: 20px;
     bottom: -35px;
+  }
+
+  .popup-video__button {
+    width: 80px;
+    height: 80px;
   }
 }
 @media (max-width: 400px) {
