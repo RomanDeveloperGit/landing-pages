@@ -90,6 +90,9 @@ body {
   width: 100%;
   height: 2px;
   background-color: #ffffff;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .menu-burger::before,
@@ -100,6 +103,9 @@ body {
   height: 2px;
   content: "";
   background-color: #ffffff;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .menu-burger::before {
@@ -108,6 +114,30 @@ body {
 
 .menu-burger::after {
   bottom: 0;
+}
+
+.menu-burger_actived::before,
+.menu-burger_actived::after {
+  top: 50%;
+}
+
+.menu-burger_actived::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-burger_actived::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.menu-burger_actived .menu-burger__row {
+  opacity: 0;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
 }
 
 .menu {

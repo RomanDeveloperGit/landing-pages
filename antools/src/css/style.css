@@ -88,6 +88,8 @@ body {
 	height: 2px;
 	
 	background-color: #ffffff;
+
+	transition: .5s;
 }
 
 .menu-burger::before,
@@ -101,6 +103,8 @@ body {
 	content: "";
 
 	background-color: #ffffff;
+
+	transition: .5s;
 }
 
 .menu-burger::before {
@@ -109,6 +113,25 @@ body {
 
 .menu-burger::after {
 	bottom: 0;
+}
+
+.menu-burger_actived::before,
+.menu-burger_actived::after {
+	top: 50%;
+}
+
+.menu-burger_actived::before {
+	transform: rotate(45deg);
+}
+
+.menu-burger_actived::after {
+	transform: rotate(-45deg);
+}
+
+.menu-burger_actived .menu-burger__row {
+	opacity: 0;
+
+	transition: 0s;
 }
 
 .menu {

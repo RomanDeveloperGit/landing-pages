@@ -1,8 +1,10 @@
 $( document ).ready( function() {
 	isWebp();
 
-	$( ".menu-burger, .menu__item_home" ).click( function() {
+	$( ".menu-burger, .menu__link_clickable" ).click( function() {
 		$( ".menu" ).toggleClass( "menu_actived" );
+		$( ".menu-burger" ).toggleClass( "menu-burger_actived" );
+
 		$( "body" ).toggleClass( "body_no-scroll-y" );
 	});
 
