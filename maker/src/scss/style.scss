@@ -78,8 +78,13 @@ body {
 	line-height: 1.18;
 
 	background-color: $activedColor;
-
 	border-radius: 6px;
+	
+	transition: .5s;
+
+	&:hover {
+		background-color: rgb(32, 137, 151);
+	}
 }
 
 // Main styles
@@ -825,7 +830,7 @@ body {
 		position: relative;
 
 		display: inline-block;
-		
+
 		padding-left: 12px;
 		margin-bottom: 15px;
 
