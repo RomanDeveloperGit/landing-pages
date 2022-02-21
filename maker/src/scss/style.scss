@@ -483,6 +483,10 @@ body {
 			border-color: $activedColor;
 		}
 	}
+
+	&__img-box_mobile {
+		display: none;
+	}
 }
 
 // Team styles

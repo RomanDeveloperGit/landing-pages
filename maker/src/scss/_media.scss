@@ -151,6 +151,40 @@
 			color: #ffffff;
 		}
 	}
+
+
+
+	.team {
+		&__container {
+			justify-content: center;
+		}
+
+		&__content {
+			max-width: 600px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			text-align: center;
+		}
+
+		&__sub-title::after {
+			display: none;
+		}
+
+		&__img-box {
+			display: none;
+		
+			&_mobile {
+				width: 300px;
+
+				display: block;
+
+				margin-bottom: 40px;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -256,6 +290,12 @@
 @media (max-width: 400px) {
 	.hero__title {
 		font-size: 25px;
+	}
+
+
+
+	.team__img-box_mobile {
+		width: 250px;
 	}
 }
 

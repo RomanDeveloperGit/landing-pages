@@ -424,6 +424,9 @@ body {
   background-color: #35AFBF;
   border-color: #35AFBF;
 }
+.team__img-box_mobile {
+  display: none;
+}
 
 .process-work {
   background: url(../images/work-bg.jpg) center/cover no-repeat;
@@ -822,6 +825,28 @@ body {
     font-size: 24px;
     color: #ffffff;
   }
+
+  .team__container {
+    justify-content: center;
+  }
+  .team__content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .team__sub-title::after {
+    display: none;
+  }
+  .team__img-box {
+    display: none;
+  }
+  .team__img-box_mobile {
+    width: 300px;
+    display: block;
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 768px) {
   .hero__title {
@@ -896,6 +921,10 @@ body {
 @media (max-width: 400px) {
   .hero__title {
     font-size: 25px;
+  }
+
+  .team__img-box_mobile {
+    width: 250px;
   }
 }
 @media (max-width: 360px) {
