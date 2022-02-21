@@ -32,7 +32,19 @@ document.querySelectorAll(".menu__link").forEach(function (element) {
   element.addEventListener("click", function () {
     if (getComputedStyle(document.querySelector(".menu-burger")).display != "none") setStatusMenu();
   });
-}); 
+});
+document.querySelectorAll(".slowScroll").forEach(function (element) {
+  element.addEventListener("click", function (event) {
+    event.preventDefault();
+    var href = this.getAttribute("href").substring(1);
+    var scrollTarget = document.getElementById(href);
+    var elementPosition = scrollTarget.getBoundingClientRect().top;
+    window.scrollBy({
+      top: elementPosition,
+      behavior: 'smooth'
+    });
+  });
+});
 
 function popupListener() {
   document.querySelector("body").classList.toggle("no-scroll");

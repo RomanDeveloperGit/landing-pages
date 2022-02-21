@@ -17,20 +17,20 @@ document.querySelectorAll( ".menu__link" ).forEach( element => {
 	});
 });
 
-// document.querySelectorAll( ".slowScroll" ).forEach( element => {
-// 	element.addEventListener( "click", function( event ) {
-// 		event.preventDefault();
+document.querySelectorAll( ".slowScroll" ).forEach( element => {
+	element.addEventListener( "click", function( event ) {
+		event.preventDefault();
 		
-//         let href = this.getAttribute( "href" ).substring( 1 );
-//         let scrollTarget = document.getElementById( href );
-//         let elementPosition = scrollTarget.getBoundingClientRect().top;
+        let href = this.getAttribute( "href" ).substring( 1 );
+        let scrollTarget = document.getElementById( href );
+        let elementPosition = scrollTarget.getBoundingClientRect().top;
 
-//         window.scrollBy({
-//             top: elementPosition,
-//             behavior: 'smooth'
-//         });
-// 	});
-// });
+        window.scrollBy({
+            top: elementPosition,
+            behavior: 'smooth'
+        });
+	});
+});
 
 function popupListener() {
 	document.querySelector( "body" ).classList.toggle( "no-scroll" );

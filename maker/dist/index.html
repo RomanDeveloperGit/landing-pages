@@ -9,15 +9,15 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap&_v=20220221220358" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.min.css?_v=20220221220358">
 	</head>
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<a class="logo header__logo" href="#">
-					<img class="logo__img" src="images/logo.png" alt="Maker">
+				<a class="logo header__logo slowScroll" href="#hero">
+					<picture><source srcset="images/logo.webp" type="image/webp"><img class="logo__img" src="images/logo.png" alt="Maker"></picture>
 					<span class="logo__text">Maker</span>
 				</a>
 				<nav class="header-nav">
@@ -25,44 +25,59 @@
 						<span class="menu-burger__row"></span>
 					</div>
 					<ul class="menu">
-						<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">About</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">The Team</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-						<li class="menu__item menu__item_mobile-button"><a class="menu__link" href="#">Sign Up</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#hero">Home</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#service">Services</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#hero">About</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#team">The Team</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#footer">Pricing</a></li>
+						<li class="menu__item"><a class="menu__link slowScroll" href="#hero">Contact</a></li>
+						<li class="menu__item menu__item_mobile-button"><a class="menu__link slowScroll" href="#hero">Sign Up</a></li>
 					</ul>
 				</nav>
-				<a class="button header__button" href="#">Sign Up</a>
+				<a class="button header__button slowScroll" href="#hero">Sign Up</a>
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero" id="hero">
 				<div class="container hero__container">
 					<div class="hero__content">
 						<h1 class="title hero__title"><span class="hero__title_accent">Make</span> a Creative solutions for your Creative <span class="hero__title_accent">ideas.</span></h1>
-						<p class="description hero__description">We are here to give you effective ideas. We help the brands to become what they want. </p>
-						<a class="button hero__button" href="#">Get Started</a>
+						<div class="hero__img-box hero__img-box_mobile">
+							<picture><source srcset="images/hero-human.webp" type="image/webp"><img class="hero__img" src="images/hero-human.png" alt="Hero human being"></picture>
+							<div class="hero__icon-box">
+								<picture><source srcset="images/icons/hero-1.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-1.png" alt="Creative icon"></picture>
+							</div>
+							<div class="hero__icon-box">
+								<picture><source srcset="images/icons/hero-2.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-2.png" alt="Creative icon"></picture>
+							</div>
+							<div class="hero__icon-box">
+								<picture><source srcset="images/icons/hero-3.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-3.png" alt="Creative icon"></picture>
+							</div>
+							<div class="hero__icon-box">
+								<picture><source srcset="images/icons/hero-4.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-4.png" alt="Creative icon"></picture>
+							</div>
+						</div>
+						<p class="description hero__description">We are here to give you effective ideas. We help the brands to become what they want.</p>
+						<a class="button hero__button slowScroll" href="#service">Get Started</a>
 					</div>
 					<div class="hero__img-box">
-						<img class="hero__img" src="images/hero-human.png" alt="Hero human being">
+						<picture><source srcset="images/hero-human.webp" type="image/webp"><img class="hero__img" src="images/hero-human.png" alt="Hero human being"></picture>
 						<div class="hero__icon-box">
-							<img class="hero__icon" src="images/icons/hero-1.png" alt="Creative icon">
+							<picture><source srcset="images/icons/hero-1.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-1.png" alt="Creative icon"></picture>
 						</div>
 						<div class="hero__icon-box">
-							<img class="hero__icon" src="images/icons/hero-2.png" alt="Creative icon">
+							<picture><source srcset="images/icons/hero-2.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-2.png" alt="Creative icon"></picture>
 						</div>
 						<div class="hero__icon-box">
-							<img class="hero__icon" src="images/icons/hero-3.png" alt="Creative icon">
+							<picture><source srcset="images/icons/hero-3.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-3.png" alt="Creative icon"></picture>
 						</div>
 						<div class="hero__icon-box">
-							<img class="hero__icon" src="images/icons/hero-4.png" alt="Creative icon">
+							<picture><source srcset="images/icons/hero-4.webp" type="image/webp"><img class="hero__icon" src="images/icons/hero-4.png" alt="Creative icon"></picture>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="service">
+			<section class="service" id="service">
 				<div class="container service__container">
 					<h2 class="title main__title service__title">We provide great services</h2>
 					<p class="description service__description">We help people to think independent. Be the boss of your brand and be the storyteller. An appropriate approach.</p>
@@ -98,16 +113,19 @@
 					</div>
 				</div>
 			</section>
-			<section class="team">
+			<section class="team" id="team">
 				<div class="container team__container">
 					<div class="team__content">
 						<h2 class="title main__title team__title">Johnatan Doe</h2>
 						<h4 class="team__sub-title">Marketing Specialist</h4>
 						<p class="description team__description">To make your web design company famous in the little we are here to provide you as many as catchy and useful web design company will surely help your company.</p>
-						<a class="team__button" href="#">Learn More</a>
+						<div class="team__img-box team__img-box_mobile">
+							<picture><source srcset="images/team.webp" type="image/webp"><img class="team__img" src="images/team.png" alt="Team"></picture>
+						</div>
+						<a class="team__button slowScroll" href="#team">Learn More</a>
 					</div>
 					<div class="team__img-box">
-						<img class="team__img" src="images/team.png" alt="Team">
+						<picture><source srcset="images/team.webp" type="image/webp"><img class="team__img" src="images/team.png" alt="Team"></picture>
 					</div>
 				</div>
 			</section>
@@ -180,10 +198,10 @@
 			</section>
 			<section class="comment">
 				<div class="container comment__container">
-					<img class="comment__logo" src="images/comment-logo.png" alt="Logo">
+					<picture><source srcset="images/comment-logo.webp" type="image/webp"><img class="comment__logo" src="images/comment-logo.png" alt="Logo"></picture>
 					<blockquote class="comment__text">“Always a pleasure to work with The Agency Creative. Such professional and happy people and you know you`ll receive a quick innovative and no fuss service.”</blockquote>
 					<div class="comment-author">
-						<img class="comment-author__img" src="images/comment-human.png" alt="Author">
+						<picture><source srcset="images/comment-human.webp" type="image/webp"><img class="comment-author__img" src="images/comment-human.png" alt="Author"></picture>
 						<address class="comment-author__info">
 							<span class="comment-author__name">Johnatan Doe </span>
 							<span class="comment-author__post">Web Designer</span>
@@ -191,14 +209,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="predict">
+			<section class="predict" id="predict">
 				<div class="container predict__container">
 					<h2 class="title main__title predict__title">People have tried to predict the future since the dawn of time.</h2>
-					<a class="button predict__button" href="#">Get Started</a>
+					<a class="button predict__button slowScroll" href="#predict">Get Started</a>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				<div class="footer-top">
 					<div class="price-item">
@@ -214,7 +232,7 @@
 							<li class="price-item__description-item"><p class="price-item__description-text">Multiple features installed</p></li>
 							<li class="price-item__description-item"><p class="price-item__description-text">100 Elements PSD + Al</p></li>
 						</ul>
-						<a class="price-item__button" href="#">Subscribe</a>
+						<a class="price-item__button slowScroll" href="#footer">Subscribe</a>
 					</div>
 					<div class="price-item">
 						<h4 class="price-item__title">Corporate</h4>
@@ -229,7 +247,7 @@
 							<li class="price-item__description-item"><p class="price-item__description-text">Multiple features installed</p></li>
 							<li class="price-item__description-item"><p class="price-item__description-text">100 Elements PSD + Al</p></li>
 						</ul>
-						<a class="price-item__button" href="#">Subscribe</a>
+						<a class="price-item__button slowScroll" href="#footer">Subscribe</a>
 					</div>
 					<div class="price-item">
 						<h4 class="price-item__title">Agency</h4>
@@ -244,7 +262,7 @@
 							<li class="price-item__description-item"><p class="price-item__description-text">Multiple features installed</p></li>
 							<li class="price-item__description-item"><p class="price-item__description-text">100 Elements PSD + Al</p></li>
 						</ul>
-						<a class="price-item__button" href="#">Subscribe</a>
+						<a class="price-item__button slowScroll" href="#footer">Subscribe</a>
 					</div>
 					<div class="price-item">
 						<h4 class="price-item__title">Enterprise</h4>
@@ -259,35 +277,35 @@
 							<li class="price-item__description-item"><p class="price-item__description-text">Multiple features installed</p></li>
 							<li class="price-item__description-item"><p class="price-item__description-text">100 Elements PSD + Al</p></li>
 						</ul>
-						<a class="price-item__button" href="#">Subscribe</a>
+						<a class="price-item__button slowScroll" href="#footer">Subscribe</a>
 					</div>
 				</div>
 				<div class="footer-bottom">
 					<div class="footer-bottom__main">
 						<ul class="footer-menu">
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Home</a></li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Privacy</a></li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Terms & Conditions</a></li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a></li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Contact us</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#hero">Home</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Privacy</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Terms & Conditions</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">About us</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link slowScroll" href="#footer">Contact us</a></li>
 						</ul>
 						<div class="footer-socials">
-							<a class="footer-socials__link" href="#">
+							<a class="footer-socials__link slowScroll" href="#footer">
 								<svg class="footer-socials__link-svg" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="footer-socials__link-path" d="M7.5487 20V10.8777H10.6094L11.0686 7.32156H7.5487V5.05147C7.5487 4.0222 7.83334 3.32076 9.31099 3.32076L11.1925 3.31999V0.13923C10.8671 0.0969453 9.75021 0 8.45021 0C5.73561 0 3.87715 1.65697 3.87715 4.69927V7.32156H0.807129V10.8777H3.87715V20H7.5487Z" fill="#FDFDFD"/>
 								</svg>
 							</a>
-							<a class="footer-socials__link" href="#">
+							<a class="footer-socials__link slowScroll" href="#footer">
 								<svg class="footer-socials__link-svg" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="footer-socials__link-path" d="M20 2.79875C19.2563 3.125 18.4637 3.34125 17.6375 3.44625C18.4875 2.93875 19.1363 2.14125 19.4412 1.18C18.6488 1.6525 17.7738 1.98625 16.8412 2.1725C16.0887 1.37125 15.0162 0.875 13.8462 0.875C11.5763 0.875 9.74875 2.7175 9.74875 4.97625C9.74875 5.30125 9.77625 5.61375 9.84375 5.91125C6.435 5.745 3.41875 4.11125 1.3925 1.6225C1.03875 2.23625 0.83125 2.93875 0.83125 3.695C0.83125 5.115 1.5625 6.37375 2.6525 7.1025C1.99375 7.09 1.3475 6.89875 0.8 6.5975C0.8 6.61 0.8 6.62625 0.8 6.6425C0.8 8.635 2.22125 10.29 4.085 10.6712C3.75125 10.7625 3.3875 10.8062 3.01 10.8062C2.7475 10.8062 2.4825 10.7913 2.23375 10.7362C2.765 12.36 4.2725 13.5538 6.065 13.5925C4.67 14.6838 2.89875 15.3412 0.98125 15.3412C0.645 15.3412 0.3225 15.3263 0 15.285C1.81625 16.4563 3.96875 17.125 6.29 17.125C13.835 17.125 17.96 10.875 17.96 5.4575C17.96 5.27625 17.9538 5.10125 17.945 4.9275C18.7588 4.35 19.4425 3.62875 20 2.79875Z" fill="#FFFFFF"/>
 								</svg>
 							</a>
-							<a class="footer-socials__link" href="#">
+							<a class="footer-socials__link slowScroll" href="#footer">
 								<svg class="footer-socials__link-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="footer-socials__link-path" d="M10.0025 0H9.9975C4.48375 0 0 4.485 0 10C0 12.1875 0.705 14.215 1.90375 15.8612L0.6575 19.5763L4.50125 18.3475C6.0825 19.395 7.96875 20 10.0025 20C15.5162 20 20 15.5138 20 10C20 4.48625 15.5162 0 10.0025 0ZM15.8212 14.1213C15.58 14.8025 14.6225 15.3675 13.8587 15.5325C13.3363 15.6437 12.6537 15.7325 10.3562 14.78C7.4175 13.5625 5.525 10.5763 5.3775 10.3825C5.23625 10.1887 4.19 8.80125 4.19 7.36625C4.19 5.93125 4.91875 5.2325 5.2125 4.9325C5.45375 4.68625 5.8525 4.57375 6.235 4.57375C6.35875 4.57375 6.47 4.58 6.57 4.585C6.86375 4.5975 7.01125 4.615 7.205 5.07875C7.44625 5.66 8.03375 7.095 8.10375 7.2425C8.175 7.39 8.24625 7.59 8.14625 7.78375C8.0525 7.98375 7.97 8.0725 7.8225 8.2425C7.675 8.4125 7.535 8.5425 7.3875 8.725C7.2525 8.88375 7.1 9.05375 7.27 9.3475C7.44 9.635 8.0275 10.5937 8.8925 11.3637C10.0087 12.3575 10.9137 12.675 11.2375 12.81C11.4787 12.91 11.7662 12.8863 11.9425 12.6988C12.1663 12.4575 12.4425 12.0575 12.7238 11.6638C12.9237 11.3813 13.1763 11.3462 13.4412 11.4462C13.7113 11.54 15.14 12.2462 15.4338 12.3925C15.7275 12.54 15.9212 12.61 15.9925 12.7338C16.0625 12.8575 16.0625 13.4388 15.8212 14.1213Z" fill="white"/>
 								</svg>
 							</a>
-							<a class="footer-socials__link" href="#">
+							<a class="footer-socials__link slowScroll" href="#footer">
 								<svg class="footer-socials__link-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="footer-socials__link-path" d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM9.99998 15.4686C6.98454 15.4686 4.53139 13.0154 4.53139 9.99998C4.53139 6.98454 6.98454 4.53139 9.99998 4.53139C13.0154 4.53139 15.4686 6.98454 15.4686 9.99998C15.4686 13.0154 13.0154 15.4686 9.99998 15.4686ZM15.5993 5.82106C14.7082 5.82106 13.9834 5.09627 13.9834 4.20516C13.9834 3.31405 14.7082 2.58911 15.5993 2.58911C16.4904 2.58911 17.2154 3.31405 17.2154 4.20516C17.2154 5.09627 16.4904 5.82106 15.5993 5.82106Z" fill="white"/>
 									<path class="footer-socials__link-path" d="M9.99972 5.70392C7.63095 5.70392 5.70361 7.6311 5.70361 10C5.70361 12.3688 7.63095 14.2961 9.99972 14.2961C12.3686 14.2961 14.2958 12.3688 14.2958 10C14.2958 7.6311 12.3686 5.70392 9.99972 5.70392Z" fill="white"/>
@@ -296,11 +314,11 @@
 							</a>
 						</div>
 					</div>
-					<a class="footer-bottom__copyright" href="#" rel="license" target="_blank">@ A new era 2016. Awesome wireframe by Name Surname</a>
+					<a class="footer-bottom__copyright slowScroll" href="#footer" rel="license" target="_blank">@ A new era 2016. Awesome wireframe by Name Surname</a>
 				</div>
 			</div>
 		</footer>
 
-				<script src="js/index.min.js"></script>
+				<script src="js/index.min.js?_v=20220221220358"></script>
 	</body>
 </html>
