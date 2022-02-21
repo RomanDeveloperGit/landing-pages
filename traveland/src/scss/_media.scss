@@ -32,15 +32,11 @@
 	.header {
 		&__container {
 			display: flex;
-			justify-content: center;
-		}
-
-		&__logo {
-			margin-right: auto;
+			justify-content: space-between;
 		}
 
 		&-nav {
-			order: 1;
+			margin-left: 0;
 		}
 
 		&__button {
