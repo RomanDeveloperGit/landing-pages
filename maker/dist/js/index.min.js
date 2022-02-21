@@ -18,6 +18,22 @@ function checkSupportWebp() {
 
 checkSupportWebp();
 
+function setStatusMenu() {
+  document.querySelector(".menu-burger").classList.toggle("menu-burger_actived");
+  document.querySelector(".menu").classList.toggle("menu_actived");
+  document.querySelector("body").classList.toggle("no-scroll");
+}
+
+document.querySelector(".menu-burger").onclick = function () {
+  setStatusMenu();
+};
+
+document.querySelectorAll(".menu__link").forEach(function (element) {
+  element.addEventListener("click", function () {
+    if (getComputedStyle(document.querySelector(".menu-burger")).display != "none") setStatusMenu();
+  });
+}); 
+
 function popupListener() {
   document.querySelector("body").classList.toggle("no-scroll");
   document.querySelector(".popup-video").classList.toggle("popup-video_actived");
@@ -28,9 +44,10 @@ function popupListener() {
   }
 }
 
-document.querySelector(".popup-video__button").addEventListener("click", function () {
+document.querySelector(".popup-video__button").onclick = function () {
   popupListener();
-});
-document.querySelector(".popup-video__close-button").addEventListener("click", function () {
+};
+
+document.querySelector(".popup-video__close-button").onclick = function () {
   popupListener();
-});
+};

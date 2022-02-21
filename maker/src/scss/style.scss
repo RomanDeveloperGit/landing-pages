@@ -185,9 +185,9 @@ body {
 	display: flex;
 	align-items: center;
 
-	gap: 5% 45px;
+	gap: 2% 45px;
 
-	margin-top: 10px;
+	margin-top: 14px;
 
 	&__item_mobile-button {
 		display: none;
@@ -520,7 +520,7 @@ body {
 	&_actived .popup-video__content {
 		display: flex;
 	}
-	
+
 	&__content {
 		position: fixed;
 		top: 0;

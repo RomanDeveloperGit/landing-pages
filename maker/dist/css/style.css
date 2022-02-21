@@ -221,8 +221,8 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  gap: 5% 45px;
-  margin-top: 10px;
+  gap: 2% 45px;
+  margin-top: 14px;
 }
 .menu__item_mobile-button {
   display: none;
@@ -707,4 +707,43 @@ body {
 
 .footer-socials__link:hover {
   opacity: 0.75;
+}
+
+@media (max-width: 992px) {
+  .header__button {
+    display: none;
+  }
+  .header-nav {
+    margin-right: 0;
+  }
+
+  .menu-burger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    transform: translateY(-100%);
+    opacity: 0;
+    margin-top: 0;
+    transition: 0.5s;
+  }
+  .menu_actived {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .menu__item_mobile-button {
+    display: flex;
+  }
+  .menu__link {
+    font-size: 24px;
+  }
 }
