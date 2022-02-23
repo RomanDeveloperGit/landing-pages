@@ -45,9 +45,9 @@ document.querySelectorAll( ".accordion-item" ).forEach( itemElement => {
 const swiper = new Swiper( ".swiper", {
 	slidesPerView: 1,
 	loop: true,
-	autoplay: {
-		// delay: 3000
-	},
+	// autoplay: {
+	// 	// delay: 3000
+	// },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,

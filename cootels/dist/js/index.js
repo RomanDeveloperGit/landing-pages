@@ -10120,8 +10120,6 @@ document.querySelectorAll(".accordion-item").forEach(function (itemElement) {
 var swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   loop: true,
-  autoplay: {
-  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
