@@ -221,7 +221,8 @@ body {
 // Hero styles
 
 .hero {
-	min-height: 100vh;
+	// min-height: 100vh;
+	height: 100vh;
 
 	display: flex;
 	align-items: center;
@@ -229,18 +230,7 @@ body {
 	@extend %coverBg;
 	background-position: 90% center;
 
-	padding-top: 40px;
-
-	&::before {
-		@extend %absolute;
-		
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-
-		background-color: rgba( 0, 0, 0, 0.6);
-	}
+	padding: 130px 0;
 
 	&__container {
 		position: relative;
