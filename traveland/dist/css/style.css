@@ -143,16 +143,16 @@ button {
 @font-face {
   font-family: Gelasio;
   font-display: swap;
-  src: url("../fonts/Gelasio-Medium.woff2") format("woff2"), url("../fonts/Gelasio-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Gelasio-Bold.woff2") format("woff2"), url("../fonts/Gelasio-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: Gelasio;
   font-display: swap;
-  src: url("../fonts/Gelasio-Bold.woff2") format("woff2"), url("../fonts/Gelasio-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/Gelasio-Medium.woff2") format("woff2"), url("../fonts/Gelasio-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
