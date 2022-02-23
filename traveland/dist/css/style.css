@@ -143,6 +143,14 @@ button {
 @font-face {
   font-family: Gelasio;
   font-display: swap;
+  src: url("../fonts/Gelasio-Medium.woff2") format("woff2"), url("../fonts/Gelasio-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gelasio;
+  font-display: swap;
   src: url("../fonts/Gelasio-Bold.woff2") format("woff2"), url("../fonts/Gelasio-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -153,14 +161,6 @@ button {
   font-display: swap;
   src: url("../fonts/Ribeye-Regular.woff2") format("woff2"), url("../fonts/Ribeye-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Gelasio;
-  font-display: swap;
-  src: url("../fonts/Gelasio-Medium.woff2") format("woff2"), url("../fonts/Gelasio-Medium.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -1261,7 +1261,9 @@ body {
 }
 
 .hero {
+  min-height: 100vh;
   height: 100vh;
+  max-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
