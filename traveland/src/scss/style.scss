@@ -221,9 +221,7 @@ body {
 // Hero styles
 
 .hero {
-	// min-height: 100vh;
-	height: 100vh;
-	max-height: 900px; // for screen site
+	min-height: 100vh;
 
 	display: flex;
 	align-items: center;
