@@ -1083,6 +1083,10 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .popup-video__close-button {
+    right: 5%;
+  }
+
   .benefit__item-box {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
