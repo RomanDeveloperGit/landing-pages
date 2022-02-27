@@ -218,13 +218,13 @@ body {
   transition: .5s;
 }
 
-.menu__item_drop-down:hover .menu__link-arrow {
+.menu__link-arrow_actived {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.menu__item_drop-down:hover .categories-menu {
+.categories-menu_actived {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

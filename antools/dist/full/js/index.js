@@ -1,13 +1,17 @@
 $( document ).ready( function() {
 	isWebp();
 
-	$( ".menu-burger, .menu__link_clickable" ).click( function() {
+	$( "body" ).on( "click", ".menu-burger, .menu_actived .menu__link_clickable", function() {
 		$( ".menu" ).toggleClass( "menu_actived" );
 		$( ".menu-burger" ).toggleClass( "menu-burger_actived" );
 
 		$( "body" ).toggleClass( "body_no-scroll-y" );
 	});
 
+	$( ".menu__item_drop-down" ).click( function() {
+		$( ".menu__link-arrow" ).toggleClass( "menu__link-arrow_actived" );
+		$( ".categories-menu" ).toggleClass( "categories-menu_actived" );
+	});
 
 	$( ".slowScroll" ).click( function() {
 		let href = $( this ).attr( "href" );

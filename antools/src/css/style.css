@@ -196,11 +196,11 @@ body {
 	transition: .5s;
 }
 
-.menu__item_drop-down:hover .menu__link-arrow {
+.menu__link-arrow_actived {
 	transform: rotate(180deg);
 }
 
-.menu__item_drop-down:hover .categories-menu {
+.categories-menu_actived {
 	display: flex;
 }
 
